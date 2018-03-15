@@ -95,6 +95,8 @@ class Popular extends React.Component {
     );
   }
   render() {
+    var languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python'];
+
     return (
       <div>
         <SelectLanguage selectedLanguage={this.state.selectedLanguage} onSelect={this.updateLanguage} />
@@ -103,5 +105,7 @@ class Popular extends React.Component {
     );
   }
 }
+
+//test comment
 
 module.exports = Popular;
