@@ -9,13 +9,13 @@ module.exports = {
     publicPath: '/'
   },
   module: {
-    rules: [
-      { test: /\.(js)$/, use: 'babel-loader' },
-      { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
-    ]
+    rules: [{ test: /\.(js)$/, use: 'babel-loader' }, { test: /\.css$/, use: ['style-loader', 'css-loader'] }]
   },
   devServer: {
-    historyApiFallback: true,
+    historyApiFallback: true
+  },
+  resolve: {
+    extensions: ['.js']
   },
   plugins: [
     new HtmlWebpackPlugin({
